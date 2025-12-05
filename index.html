@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -200,6 +199,7 @@
           </div>
         </article>
       </div>
+
       <div class="carousel-dots">
         <button class="dot active" data-index="0"></button>
         <button class="dot" data-index="1"></button>
@@ -219,7 +219,8 @@
       </p>
     </div>
     <div class="product-grid">
-      <article class="card">
+
+      <a class="card card-link" href="stratify/index.html">
         <div class="card-tag">Trading · Desktop</div>
         <h3>Stratify — Trading App</h3>
         <p>
@@ -227,11 +228,10 @@
         </p>
         <div class="card-footer">
           <span>Windows-first · local data</span>
-          <a href="stratify/index.html">Enter Stratify →</a>
         </div>
-      </article>
+      </a>
 
-      <article class="card">
+      <a class="card card-link" href="frontrunner/index.html">
         <div class="card-tag">TradingView · Script</div>
         <h3>FrontRunner Signals</h3>
         <p>
@@ -239,11 +239,10 @@
         </p>
         <div class="card-footer">
           <span>TV-native · subscription</span>
-          <a href="frontrunner/index.html">Enter FrontRunner →</a>
         </div>
-      </article>
+      </a>
 
-      <article class="card">
+      <a class="card card-link" href="counselix/index.html">
         <div class="card-tag">AI · Legal</div>
         <h3>Counselix</h3>
         <p>
@@ -251,11 +250,10 @@
         </p>
         <div class="card-footer">
           <span>Docs · contracts · prep</span>
-          <a href="counselix/index.html">Enter Counselix →</a>
         </div>
-      </article>
+      </a>
 
-      <article class="card">
+      <a class="card card-link" href="lifenex/index.html">
         <div class="card-tag">AI · Life Coach</div>
         <h3>Lifenex</h3>
         <p>
@@ -263,11 +261,10 @@
         </p>
         <div class="card-footer">
           <span>Habits · planning</span>
-          <a href="lifenex/index.html">Enter Lifenex →</a>
         </div>
-      </article>
+      </a>
 
-      <article class="card">
+      <a class="card card-link" href="postpilot/index.html">
         <div class="card-tag">AI · Social</div>
         <h3>PostPilot</h3>
         <p>
@@ -275,11 +272,10 @@
         </p>
         <div class="card-footer">
           <span>Content · cadence</span>
-          <a href="postpilot/index.html">Enter PostPilot →</a>
         </div>
-      </article>
+      </a>
 
-      <article class="card">
+      <a class="card card-link" href="acesplace/index.html">
         <div class="card-tag">Kids · YouTube</div>
         <h3>Ace’s Place</h3>
         <p>
@@ -287,9 +283,9 @@
         </p>
         <div class="card-footer">
           <span>Kids · calm content</span>
-          <a href="acesplace/index.html">Enter Ace’s Place →</a>
         </div>
-      </article>
+      </a>
+
     </div>
   </section>
 </main>
@@ -316,7 +312,7 @@
     slides.forEach(s => s.classList.remove('active'));
     dots.forEach(d => d.classList.remove('active'));
     slides[index].classList.add('active');
-    dots[index].classList.add('active');
+    dots[index].classList.add('active'));
     current = index;
   }
 
@@ -346,5 +342,6 @@
   startTimer();
 })();
 </script>
+
 </body>
 </html>
