@@ -489,3 +489,17 @@ footer a {
     flex-direction: column;
   }
 }
+/* === FULL CARD CLICKABLE BEHAVIOR (ADDED) === */
+.card-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  height: 100%;
+}
+
+/* Match hover behavior when whole card is the link */
+.card-link:hover .card {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 44px rgba(77, 107, 255, 0.8);
+  border-color: rgba(124, 245, 255, 0.9);
+}
