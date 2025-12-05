@@ -1,505 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>J Burr Enterprises LLC | Product Suite</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="nav-container">
+    <div class="logo">
+      <div class="logo-mark"></div>
+      <span>J BURR ENTERPRISES<small>Product Suite</small></span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about/index.html">About</a></li>
+      </ul>
+    </nav>
+    <!-- Removed Start With Stratify CTA -->
+  </div>
+</header>
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-}
-body {
-  background: #050711;
-  color: #f5f5f5;
-  line-height: 1.5;
-}
-a {
-  color: inherit;
-  text-decoration: none;
-}
-header {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background: rgba(3, 5, 20, 0.96);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(120, 132, 255, 0.28);
-}
-.nav-container {
-  max-width: 1120px;
-  margin: 0 auto;
-  padding: 0.7rem 1.25rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 0.45rem;
-  font-weight: 600;
-  letter-spacing: 0.09em;
-  font-size: 0.9rem;
-  text-transform: uppercase;
-}
-.logo-mark {
-  width: 26px;
-  height: 26px;
-  border-radius: 999px;
-  background: radial-gradient(circle at 30% 30%, #7cf5ff, #4d6bff 45%, #000);
-  box-shadow: 0 0 14px rgba(124, 245, 255, 0.9);
-}
-.logo span small {
-  display: block;
-  font-size: 0.6rem;
-  letter-spacing: 0.18em;
-  color: #9fa7ff;
-}
-nav ul {
-  display: flex;
-  gap: 1rem;
-  list-style: none;
-}
-nav a {
-  font-size: 0.9rem;
-  padding: 0.35rem 0.7rem;
-  border-radius: 999px;
-  color: #d0d4ff;
-  transition: background 0.15s ease, color 0.15s ease;
-}
-nav a:hover,
-nav a.active {
-  background: rgba(120, 132, 255, 0.21);
-  color: #ffffff;
-}
-.nav-cta {
-  padding: 0.4rem 0.9rem;
-  border-radius: 999px;
-  border: 1px solid rgba(124, 245, 255, 0.7);
-  color: #7cf5ff;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
-.nav-cta:hover {
-  background: radial-gradient(circle at 10% 0%, #7cf5ff, #4d6bff);
-  color: #050711;
-}
-main {
-  max-width: 1120px;
-  margin: 0 auto;
-  padding: 1.8rem 1.25rem 3rem;
-}
-.hero-shell {
-  margin-top: 1.3rem;
-  border-radius: 20px;
-  padding: 1.4rem 1.4rem 1.7rem;
-  background:
-    radial-gradient(circle at 0 0, rgba(124, 245, 255, 0.2), transparent 55%),
-    radial-gradient(circle at 100% 0, rgba(164, 104, 255, 0.24), transparent 55%),
-    linear-gradient(135deg, #050813, #050712);
-  border: 1px solid rgba(124, 245, 255, 0.3);
-  box-shadow: 0 26px 70px rgba(0, 0, 0, 0.8);
-}
-.hero-header {
-  display: flex;
-  justify-content: space-between;
-  gap: 2rem;
-  align-items: flex-start;
-  margin-bottom: 1rem;
-}
-.hero-copy {
-  max-width: 560px;
-}
-.hero-kicker {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.78rem;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  color: #9fa7ff;
-  margin-bottom: 0.7rem;
-}
-.hero-kicker .pill {
-  padding: 0.16rem 0.7rem;
-  border-radius: 999px;
-  border: 1px solid rgba(124, 245, 255, 0.9);
-  color: #7cf5ff;
-  background: rgba(5, 8, 27, 0.8);
-}
-.hero-copy h1 {
-  font-size: 2.05rem;
-  line-height: 1.1;
-  margin-bottom: 0.6rem;
-}
-.hero-copy h1 span {
-  background: linear-gradient(120deg, #7cf5ff, #9f8bff, #ffce6b);
-  -webkit-background-clip: text;
-  color: transparent;
-}
-.hero-copy p {
-  font-size: 0.94rem;
-  color: #c4c7ff;
-}
-.hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  margin-top: 1rem;
-}
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.35rem;
-  padding: 0.55rem 1.1rem;
-  border-radius: 999px;
-  border: 1px solid transparent;
-  font-size: 0.9rem;
-  cursor: pointer;
-  transition: background 0.16s ease, border-color 0.16s ease, transform 0.08s ease;
-}
-.btn-primary {
-  background: radial-gradient(circle at 10% 0%, #7cf5ff, #4d6bff);
-  border-color: rgba(124, 245, 255, 0.9);
-  color: #050711;
-  font-weight: 600;
-}
-.btn-primary:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 10px 26px rgba(77, 107, 255, 0.85);
-}
-.btn-ghost {
-  background: transparent;
-  border-color: rgba(151, 163, 255, 0.7);
-  color: #d0d4ff;
-}
-.btn-ghost:hover {
-  background: rgba(19, 25, 60, 0.9);
-}
-.hero-meta {
-  font-size: 0.8rem;
-  color: #8f95ff;
-  margin-top: 0.6rem;
-}
-.hero-badge-stack {
-  display: flex;
-  flex-direction: column;
-  gap: 0.45rem;
-  font-size: 0.78rem;
-  color: #c4c7ff;
-}
-.hero-badge {
-  padding: 0.35rem 0.7rem;
-  border-radius: 999px;
-  background: rgba(5, 8, 27, 0.9);
-  border: 1px solid rgba(64, 76, 182, 0.9);
-}
-.hero-badge strong {
-  color: #7cf5ff;
-}
-.carousel {
-  position: relative;
-  margin-top: 1.1rem;
-  border-radius: 16px;
-  overflow: hidden;
-  border: 1px solid rgba(64, 76, 182, 0.85);
-  background: radial-gradient(circle at 0 0, rgba(124, 245, 255, 0.16), transparent 55%),
-              linear-gradient(135deg, #050712, #05050e);
-}
-.carousel-inner {
-  position: relative;
-  width: 100%;
-  min-height: 170px;
-}
-.carousel-slide {
-  position: absolute;
-  inset: 0;
-  opacity: 0;
-  transform: translateX(10px);
-  transition: opacity 0.35s ease, transform 0.35s ease;
-  padding: 1.1rem 1.3rem 1.3rem;
-  display: flex;
-  justify-content: space-between;
-  gap: 1.6rem;
-}
-.carousel-slide.active {
-  opacity: 1;
-  transform: translateX(0);
-}
-.slide-copy {
-  max-width: 520px;
-}
-.slide-kicker {
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.18em;
-  color: #9fa7ff;
-  margin-bottom: 0.35rem;
-}
-.slide-title {
-  font-size: 1.1rem;
-  margin-bottom: 0.35rem;
-}
-.slide-title span {
-  color: #7cf5ff;
-}
-.slide-copy p {
-  font-size: 0.86rem;
-  color: #c4c7ff;
-}
-.slide-meta {
-  margin-top: 0.55rem;
-  font-size: 0.78rem;
-  color: #8f95ff;
-}
-.slide-actions {
-  margin-top: 0.85rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem;
-}
-.slide-visual {
-  flex: 1;
-  min-width: 200px;
-  border-radius: 12px;
-  background:
-    radial-gradient(circle at 10% 0, rgba(124, 245, 255, 0.26), transparent 55%),
-    radial-gradient(circle at 100% 100%, rgba(164, 104, 255, 0.35), transparent 55%),
-    linear-gradient(145deg, #050816, #050713);
-  border: 1px solid rgba(124, 245, 255, 0.4);
-  position: relative;
-  overflow: hidden;
-}
-.slide-visual::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
-                    linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
-  background-size: 20px 20px;
-  opacity: 0.45;
-}
-.slide-chip {
-  position: absolute;
-  top: 0.8rem;
-  left: 0.8rem;
-  padding: 0.22rem 0.6rem;
-  border-radius: 999px;
-  background: rgba(5, 8, 27, 0.96);
-  border: 1px solid rgba(124, 245, 255, 0.9);
-  font-size: 0.72rem;
-}
-.slide-metric {
-  position: absolute;
-  bottom: 0.9rem;
-  left: 0.9rem;
-  right: 0.9rem;
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.72rem;
-  color: #c4c7ff;
-}
-.slide-metric span strong {
-  display: block;
-  font-size: 0.9rem;
-  color: #f7fbff;
-}
-.carousel-dots {
-  display: flex;
-  gap: 0.45rem;
-  padding: 0.6rem 0.9rem 0.8rem;
-  justify-content: flex-start;
-  align-items: center;
-  border-top: 1px solid rgba(54, 64, 160, 0.9);
-  background: radial-gradient(circle at 0 0, rgba(124,245,255,0.08), transparent 55%);
-}
-.dot {
-  width: 9px;
-  height: 9px;
-  border-radius: 999px;
-  border: 1px solid rgba(151, 163, 255, 0.7);
-  background: transparent;
-  cursor: pointer;
-  transition: background 0.16s ease, transform 0.1s ease, border-color 0.16s ease;
-}
-.dot.active {
-  background: #7cf5ff;
-  border-color: rgba(124, 245, 255, 1);
-  transform: scale(1.05);
-}
-.section {
-  margin-top: 2.6rem;
-}
-.section-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 1.4rem;
-  margin-bottom: 1.2rem;
-}
-.section h2 {
-  font-size: 1.35rem;
-}
-.section p {
-  font-size: 0.88rem;
-  color: #b1b6ff;
-  max-width: 520px;
-}
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.1rem;
-}
-.card {
-  border-radius: 16px;
-  padding: 1rem 1rem 1.2rem;
-  background: radial-gradient(circle at 0 0, rgba(124, 245, 255, 0.14), transparent 55%),
-              linear-gradient(145deg, #050814, #050711);
-  border: 1px solid rgba(64, 76, 182, 0.9);
-  box-shadow: 0 16px 38px rgba(0, 0, 0, 0.75);
-  transition: transform 0.14s ease, box-shadow 0.14s ease, border-color 0.16s ease;
-}
-.card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 16px 44px rgba(77, 107, 255, 0.8);
-  border-color: rgba(124, 245, 255, 0.9);
-}
-.card-tag {
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  letter-spacing: 0.16em;
-  color: #8f95ff;
-  margin-bottom: 0.4rem;
-}
-.card h3 {
-  font-size: 1.02rem;
-  margin-bottom: 0.25rem;
-}
-.card p {
-  font-size: 0.84rem;
-  color: #c4c7ff;
-}
-.card-footer {
-  margin-top: 0.8rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 0.78rem;
-  color: #9fa7ff;
-}
-.card-footer a {
-  font-size: 0.8rem;
-  color: #7cf5ff;
-}
-.page-hero {
-  margin-top: 1.9rem;
-  border-radius: 18px;
-  padding: 1.4rem 1.4rem 1.6rem;
-  background:
-    radial-gradient(circle at 0 0, rgba(124, 245, 255, 0.18), transparent 55%),
-    radial-gradient(circle at 100% 0, rgba(164, 104, 255, 0.24), transparent 55%),
-    linear-gradient(135deg, #050813, #050712);
-  border: 1px solid rgba(124, 245, 255, 0.35);
-  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.78);
-}
-.page-hero h1 {
-  font-size: 1.6rem;
-  margin-bottom: 0.4rem;
-}
-.page-hero p {
-  font-size: 0.9rem;
-  color: #c4c7ff;
-}
-.page-hero-meta {
-  margin-top: 0.6rem;
-  font-size: 0.8rem;
-  color: #8f95ff;
-}
-.page-layout {
-  margin-top: 2rem;
-  display: grid;
-  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
-  gap: 1.4rem;
-}
-.panel {
-  border-radius: 16px;
-  padding: 1rem 1.1rem 1.2rem;
-  background: radial-gradient(circle at 0 0, rgba(124, 245, 255, 0.12), transparent 55%),
-              linear-gradient(145deg, #050814, #050711);
-  border: 1px solid rgba(64, 76, 182, 0.9);
-  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.8);
-}
-.panel h2 {
-  font-size: 1.05rem;
-  margin-bottom: 0.35rem;
-}
-.panel p,
-.panel li {
-  font-size: 0.86rem;
-  color: #c4c7ff;
-}
-.panel ul {
-  margin-left: 1rem;
-  margin-top: 0.4rem;
-}
-.panel ul li {
-  margin-bottom: 0.25rem;
-}
-.subtle {
-  font-size: 0.78rem;
-  color: #8f95ff;
-  margin-top: 0.4rem;
-}
-footer {
-  border-top: 1px solid rgba(54, 64, 160, 0.8);
-  margin-top: 2.3rem;
-  padding: 1rem 1.25rem 2rem;
-  color: #7b82d0;
-  font-size: 0.78rem;
-}
-.footer-inner {
-  max-width: 1120px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-footer a {
-  color: #9fa7ff;
-  font-size: 0.78rem;
-}
-@media (max-width: 860px) {
-  .hero-header {
-    flex-direction: column;
-  }
-  .page-layout {
-    grid-template-columns: minmax(0, 1fr);
-  }
-}
-@media (max-width: 780px) {
-  nav ul {
-    display: none;
-  }
-}
-@media (max-width: 640px) {
-  .hero-shell {
-    padding: 1.1rem 1.1rem 1.4rem;
-  }
-  .carousel-slide {
-    flex-direction: column;
-  }
-}
-/* === FULL CARD CLICKABLE BEHAVIOR (ADDED) === */
-.card-link {
-  display: block;
-  color: inherit;
-  text-decoration: none;
-  height: 100%;
-}
+<main>
+  <section class="hero-shell">
+    <div class="hero-header">
+      <div class="hero-copy">
+        <div class="hero-kicker">
+          <span class="pill">Multi-Product Studio</span>
+          <span>Trading · AI · Media</span>
+        </div>
 
-/* Match hover behavior when whole card is the link */
-.card-link:hover .card {
-  transform: translateY(-3px);
-  box-shadow: 0 16px 44px rgba(77, 107, 255, 0.8);
-  border-color: rgba(124, 245, 255, 0.9);
-}
+        <h1>A focused stack of products for <span>money, mind, and media.</span></h1>
+
+        <p>
+          J Burr Enterprises LLC builds tools that help people think clearer, trade smarter, automate more, and give their
+          families better options — from trading terminals to life coaches and kids’ content.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#products" class="btn btn-primary">Browse all products</a>
+        </div>
+
+        <div class="hero-meta">
+          One founder, multiple focused products — built to be useful long before they’re “perfect.”
+        </div>
+      </div>
+
+      <div class="hero-badge-stack">
+        <div class="hero-badge"><strong>6</strong> products live or in active development</div>
+        <div class="hero-badge"><strong>Local-first mindset</strong> · your data, your machine</div>
+        <div class="hero-badge"><strong>No VC</strong> · built for users, not pitch decks</div>
+      </div>
+    </div>
+
+    <!-- ▶▶ CAROUSEL START -->
+    <div class="carousel" aria-label="Featured products">
+      <div class="carousel-inner">
+
+        <!-- STRATIFY -->
+        <article class="carousel-slide active" data-index="0" data-href="stratify/index.html">
+          <div class="slide-copy">
+            <div class="slide-kicker">Trading · Desktop</div>
+            <div class="slide-title">Stratify — <span>local-first trading companion</span></div>
+            <p>A Windows-first trading toolkit focused on structure and repeatable setups.</p>
+            <div class="slide-meta">Built for serious retail traders.</div>
+          </div>
+
+          <div class="slide-visual">
+            <div class="slide-chip">Stratify</div>
+            <div class="slide-metric">
+              <span><strong>Local</strong>no cloud lock-in</span>
+              <span><strong>Scan</strong>focused watchlists</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- FRONTRUNNER -->
+        <article class="carousel-slide" data-index="1" data-href="frontrunner/index.html">
+          <div class="slide-copy">
+            <div class="slide-kicker">TradingView · Script</div>
+            <div class="slide-title">FrontRunner Signals — <span>invite-only signals</span></div>
+            <p>A structured, IBI-based TradingView script for intentional traders.</p>
+            <div class="slide-meta">Delivered as an invite-only subscription.</div>
+          </div>
+
+          <div class="slide-visual">
+            <div class="slide-chip">FrontRunner</div>
+            <div class="slide-metric">
+              <span><strong>TV</strong>TradingView-native</span>
+              <span><strong>Zones</strong>IBI-focused</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- COUNSELIX -->
+        <article class="carousel-slide" data-index="2" data-href="counselix/index.html">
+          <div class="slide-copy">
+            <div class="slide-kicker">AI · Legal Sidekick</div>
+            <div class="slide-title">Counselix — <span>AI legal sidekick</span></div>
+            <p>Helps break down documents and prepare better questions for attorneys.</p>
+            <div class="slide-meta">Plain-language legal clarity.</div>
+          </div>
+
+          <div class="slide-visual">
+            <div class="slide-chip">Counselix</div>
+            <div class="slide-metric">
+              <span><strong>Summaries</strong>plain-language</span>
+              <span><strong>Prep</strong>better questions</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- LIFENEX -->
+        <article class="carousel-slide" data-index="3" data-href="lifenex/index.html">
+          <div class="slide-copy">
+            <div class="slide-kicker">AI · Life Coach</div>
+            <div class="slide-title">Lifenex — <span>AI life coach companion</span></div>
+            <p>A structured, gently-pushy assistant for goals and habits.</p>
+            <div class="slide-meta">Built for real life, not quotes.</div>
+          </div>
+
+          <div class="slide-visual">
+            <div class="slide-chip">Lifenex</div>
+            <div class="slide-metric">
+              <span><strong>Habits</strong>daily nudges</span>
+              <span><strong>Focus</strong>goal tracking</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- POSTPILOT -->
+        <article class="carousel-slide" data-index="4" data-href="postpilot/index.html">
+          <div class="slide-copy">
+            <div class="slide-kicker">AI · Social Media</div>
+            <div class="slide-title">PostPilot — <span>AI social media assistant</span></div>
+            <p>Drafts, cleans, and schedules content without burnout.</p>
+            <div class="slide-meta">Made for creators and small brands.</div>
+          </div>
+
+          <div class="slide-visual">
+            <div class="slide-chip">PostPilot</div>
+            <div class="slide-metric">
+              <span><strong>Drafts</strong>faster content</span>
+              <span><strong>Cadence</strong>stay consistent</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- ACE’S PLACE -->
+        <article class="carousel-slide" data-index="5" data-href="acesplace/index.html">
+          <div class="slide-copy">
+            <div class="slide-kicker">Kids · YouTube</div>
+            <div class="slide-title">Ace’s Place — <span>kids’ learning & fun</span></div>
+            <p>Calm, positive, lightly educational content for young children.</p>
+            <div class="slide-meta">Built with parents in mind.</div>
+          </div>
+
+          <div class="slide-visual">
+            <div class="slide-chip">Ace’s Place</div>
+            <div class="slide-metric">
+              <span><strong>Learn</strong>light education</span>
+              <span><strong>Vibes</strong>kid-safe</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="carousel-dots">
+        <button class="dot active" data-index="0"></button>
+        <button class="dot" data-index="1"></button>
+        <button class="dot" data-index="2"></button>
+        <button class="dot" data-index="3"></button>
+        <button class="dot" data-index="4"></button>
+        <button class="dot" data-index="5"></button>
+      </div>
+    </div>
+    <!-- ▶▶ CAROUSEL END -->
+
+  </section>
+
+
+  <!-- PRODUCTS SECTION -->
+  <section class="section" id="products">
+    <div class="section-header">
+      <h2>All products under J Burr Enterprises</h2>
+      <p>
+        From trading to AI sidekicks and kids’ content, each product is designed to solve a very specific problem.
+      </p>
+    </div>
+
+    <div class="product-grid">
+
+      <a class="card-link" href="stratify/index.html">
+        <article class="card">
+          <div class="card-tag">Trading · Desktop</div>
+          <h3>Stratify — Trading App</h3>
+          <p>A local-first desktop assistant built for intentional traders.</p>
+          <div class="card-footer"><span>Windows-first · local data</span></div>
+        </article>
+      </a>
+
+      <a class="card-link" href="frontrunner/index.html">
+        <article class="card">
+          <div class="card-tag">TradingView · Script</div>
+          <h3>FrontRunner Signals</h3>
+          <p>Structured signal generation using IBI-style logic.</p>
+          <div class="card-footer"><span>TV-native · subscription</span></div>
+        </article>
+      </a>
+
+      <a class="card-link" href="counselix/index.html">
+        <article class="card">
+          <div class="card-tag">AI · Legal</div>
+          <h3>Counselix</h3>
+          <p>A practical AI helper for contracts and confusing documents.</p>
+          <div class="card-footer"><span>Docs · contracts · prep</span></div>
+        </article>
+      </a>
+
+      <a class="card-link" href="lifenex/index.html">
+        <article class="card">
+          <div class="card-tag">AI · Life Coach</div>
+          <h3>Lifenex</h3>
+          <p>An AI life coach companion focused on clarity and consistency.</p>
+          <div class="card-footer"><span>Habits · planning</span></div>
+        </article>
+      </a>
+
+      <a class="card-link" href="postpilot/index.html">
+        <article class="card">
+          <div class="card-tag">AI · Social</div>
+          <h3>PostPilot</h3>
+          <p>AI-powered content crafting and scheduling.</p>
+          <div class="card-footer"><span>Content · cadence</span></div>
+        </article>
+      </a>
+
+      <a class="card-link" href="acesplace/index.html">
+        <article class="card">
+          <div class="card-tag">Kids · YouTube</div>
+          <h3>Ace’s Place</h3>
+          <p>Kid-friendly stories and learning content.</p>
+          <div class="card-footer"><span>Kids · calm content</span></div>
+        </article>
+      </a>
+
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <span>© 2025 J Burr Enterprises LLC. All rights reserved.</span>
+    <span>
+      <a href="about/index.html">About</a> ·
+      <a href="#">Terms</a> ·
+      <a href="#">Privacy</a>
+    </span>
+  </div>
+</footer>
+
+<script>
+(function() {
+  const slides = Array.from(document.querySelectorAll('.carousel-slide'));
+  const dots = Array.from(document.querySelectorAll('.dot'));
+  let current = 0;
+  let timer;
+
+  function showSlide(index) {
+    slides.forEach(s => s.classList.remove('active'));
+    dots.forEach(d => d.classList.remove('active'));
+    slides[index].classList.add('active');
+    dots[index].classList.add('active');
+    current = index;
+  }
+
+  function nextSlide() {
+    const next = (current + 1) % slides.length;
+    showSlide(next);
+  }
+
+  function startTimer() {
+    timer = setInterval(nextSlide, 6500);
+  }
+
+  function resetTimer() {
+    clearInterval(timer);
+    startTimer();
+  }
+
+  dots.forEach(dot => {
+    dot.addEventListener('click', () => {
+      const idx = parseInt(dot.getAttribute('data-index'), 10);
+      showSlide(idx);
+      resetTimer();
+    });
+  });
+
+  // ⭐ FULL-SLIDE CLICK HANDLER (ADDED FOR YOU)
+  slides.forEach(slide => {
+    slide.style.cursor = "pointer";
+    slide.addEventListener("click", () => {
+      const href = slide.dataset.href;
+      if (href) window.location.href = href;
+    });
+  });
+
+  showSlide(0);
+  startTimer();
+})();
+</script>
+
+</body>
+</html>
