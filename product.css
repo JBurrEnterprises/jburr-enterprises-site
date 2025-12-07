@@ -1,0 +1,161 @@
+/* product.css
+   Additional styling for product detail pages and pricing.
+   Relies on base typography, colors, and layout defined in style.css.
+*/
+
+/* Generic section spacing on product pages */
+.product-main {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 1.8rem 1.25rem 3rem;
+}
+
+/* Pricing sections */
+.pricing-section {
+  margin-top: 2rem;
+}
+
+.pricing-section h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.6rem;
+}
+
+.pricing-intro {
+  font-size: 0.88rem;
+  color: #b1b6ff;
+  margin-bottom: 0.8rem;
+}
+
+/* Responsive pricing grid */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+/* Individual pricing card */
+.pricing-card {
+  border-radius: 16px;
+  padding: 1rem 1rem 1.2rem;
+  background:
+    radial-gradient(circle at 0 0, rgba(124, 245, 255, 0.16), transparent 55%),
+    linear-gradient(145deg, #050814, #050711);
+  border: 1px solid rgba(64, 76, 182, 0.9);
+  box-shadow: 0 16px 38px rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.pricing-card.highlight {
+  border-color: rgba(124, 245, 255, 0.95);
+  box-shadow: 0 20px 48px rgba(77, 107, 255, 0.9);
+}
+
+.plan-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #e4e7ff;
+  margin-bottom: 0.25rem;
+}
+
+.plan-tag {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: #8f95ff;
+  margin-bottom: 0.4rem;
+}
+
+.plan-price {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.plan-price span {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #9fa7ff;
+  margin-left: 0.15rem;
+}
+
+.plan-description {
+  font-size: 0.82rem;
+  color: #c4c7ff;
+  margin-bottom: 0.65rem;
+}
+
+.plan-details {
+  font-size: 0.78rem;
+  color: #9fa7ff;
+  margin-bottom: 0.8rem;
+}
+
+.plan-details ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.plan-details ul li {
+  margin-bottom: 0.2rem;
+}
+
+/* Stripe button inside pricing cards */
+.plan-actions {
+  margin-top: auto;
+}
+
+.plan-actions .btn {
+  width: 100%;
+  justify-content: center;
+}
+
+/* Legal / disclaimer sections on product pages */
+.legal-section {
+  margin-top: 2.6rem;
+}
+
+.legal-section .section-header h2 {
+  font-size: 1.2rem;
+}
+
+.legal-section .panel h3 {
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.legal-section .panel p,
+.legal-section .panel li {
+  font-size: 0.84rem;
+}
+
+/* Back link */
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.8rem;
+  color: #9fa7ff;
+  margin-top: 1.4rem;
+}
+
+.back-link:hover {
+  color: #ffffff;
+}
+
+/* Slight tweak for product page main element so it can reuse base <main> if needed */
+.product-page main {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 1.8rem 1.25rem 3rem;
+}
+
+/* Responsive adjustments for pricing grid */
+@media (max-width: 640px) {
+  .pricing-card {
+    padding: 0.9rem 0.9rem 1.1rem;
+  }
+}
