@@ -53,59 +53,145 @@
       </div>
     </div>
 
-   <script>
-(function() {
-  const slides = Array.from(document.querySelectorAll('.carousel-slide'));
-  const dots = Array.from(document.querySelectorAll('.dot'));
-  let current = 0;
-  let timer;
+    <div class="carousel" aria-label="Featured products">
+      <div class="carousel-inner">
+        <article class="carousel-slide active" data-index="0" data-href="stratify/index.html">
+          <div class="slide-copy">
+            <div class="slide-kicker">Trading · Desktop</div>
+            <div class="slide-title">Stratify — <span>local-first trading companion</span></div>
+            <p>
+              A Windows-first trading toolkit focused on scanning, structure, and repeatable process — not dopamine hits 
+              from random alerts.
+            </p>
+            <div class="slide-meta">
+              Designed for serious retail traders who want a system, not noise.
+            </div>
+            <!-- Removed slide-actions button; full slide will now be clickable -->
+          </div>
+          <div class="slide-visual">
+            <div class="slide-chip">Stratify</div>
+            <div class="slide-metric">
+              <span><strong>Local</strong>no cloud lock-in</span>
+              <span><strong>Scan</strong>focused watchlists</span>
+            </div>
+          </div>
+        </article>
 
-  function showSlide(index) {
-    slides.forEach(s => s.classList.remove('active'));
-    dots.forEach(d => d.classList.remove('active'));
-    slides[index].classList.add('active');
-    dots[index].classList.add('active');
-    current = index;
-  }
+        <article class="carousel-slide" data-index="1" data-href="frontrunner/index.html">
+          <div class="slide-copy">
+            <div class="slide-kicker">TradingView · Script</div>
+            <div class="slide-title">FrontRunner Signals — <span>invite-only signals</span></div>
+            <p>
+              A premium TradingView script focused on structured entries, not meme-chasing — built around Impulse–Balance–Impulse
+              style logic and zone awareness.
+            </p>
+            <div class="slide-meta">
+              Delivered as an invite-only TradingView script with subscription-based access.
+            </div>
+          </div>
+          <div class="slide-visual">
+            <div class="slide-chip">FrontRunner Signals</div>
+            <div class="slide-metric">
+              <span><strong>TV</strong>TradingView-native</span>
+              <span><strong>Zones</strong>IBI-focused</span>
+            </div>
+          </div>
+        </article>
 
-  function nextSlide() {
-    const next = (current + 1) % slides.length;
-    showSlide(next);
-  }
+        <article class="carousel-slide" data-index="2" data-href="counselix/index.html">
+          <div class="slide-copy">
+            <div class="slide-kicker">AI · Legal Sidekick</div>
+            <div class="slide-title">Counselix — <span>AI legal sidekick</span></div>
+            <p>
+              A practical helper for understanding documents, contracts, and legal language — built to give you better questions
+              to ask a real attorney, not to replace one.
+            </p>
+            <div class="slide-meta">
+              Ideal for everyday people navigating leases, agreements, or small-business paperwork.
+            </div>
+          </div>
+          <div class="slide-visual">
+            <div class="slide-chip">Counselix</div>
+            <div class="slide-metric">
+              <span><strong>Summaries</strong>plain-language</span>
+              <span><strong>Prep</strong>better questions</span>
+            </div>
+          </div>
+        </article>
 
-  function startTimer() {
-    timer = setInterval(nextSlide, 6500);
-  }
+        <article class="carousel-slide" data-index="3" data-href="lifenex/index.html">
+          <div class="slide-copy">
+            <div class="slide-kicker">AI · Life Coach</div>
+            <div class="slide-title">Lifenex — <span>AI life coach companion</span></div>
+            <p>
+              A structured, gently-pushy assistant to help you clarify goals, track progress, and actually follow through —
+              built for real life, not Instagram quotes.
+            </p>
+            <div class="slide-meta">
+              Focused on habits, planning, and practical next steps.
+            </div>
+          </div>
+          <div class="slide-visual">
+            <div class="slide-chip">Lifenex</div>
+            <div class="slide-metric">
+              <span><strong>Habits</strong>daily nudges</span>
+              <span><strong>Focus</strong>goal tracking</span>
+            </div>
+          </div>
+        </article>
 
-  function resetTimer() {
-    clearInterval(timer);
-    startTimer();
-  }
+        <article class="carousel-slide" data-index="4" data-href="postpilot/index.html">
+          <div class="slide-copy">
+            <div class="slide-kicker">AI · Social Media</div>
+            <div class="slide-title">PostPilot — <span>AI social media assistant</span></div>
+            <p>
+              A content helper aimed at drafting posts, cleaning up ideas, and keeping you consistent — so showing up online
+              doesn’t feel like a second job.
+            </p>
+            <div class="slide-meta">
+              For creators, traders, and small businesses who want presence without burning out.
+            </div>
+          </div>
+          <div class="slide-visual">
+            <div class="slide-chip">PostPilot</div>
+            <div class="slide-metric">
+              <span><strong>Drafts</strong>faster content</span>
+              <span><strong>Cadence</strong>stay consistent</span>
+            </div>
+          </div>
+        </article>
 
-  // --- FIX: Make each slide clickable independently ---
-  slides.forEach(slide => {
-    slide.style.cursor = "pointer";
-
-    slide.addEventListener("click", () => {
-      const target = slide.getAttribute("data-href");
-      if (target) window.location.href = target;
-    });
-  });
-
-  // --- Dot navigation ---
-  dots.forEach(dot => {
-    dot.addEventListener('click', () => {
-      const idx = parseInt(dot.getAttribute('data-index'), 10);
-      showSlide(idx);
-      resetTimer();
-    });
-  });
-
-  // Init
-  showSlide(0);
-  startTimer();
-})();
-</script>
+        <article class="carousel-slide" data-index="5" data-href="acesplace/index.html">
+          <div class="slide-copy">
+            <div class="slide-kicker">Kids · YouTube</div>
+            <div class="slide-title">Ace’s Place — <span>kids’ learning & fun</span></div>
+            <p>
+              A character-driven kids’ channel focused on simple learning, fun stories, and content you can actually feel good
+              about letting play in the background.
+            </p>
+            <div class="slide-meta">
+              Built with parents in mind — simple, calm, and positive.
+            </div>
+          </div>
+          <div class="slide-visual">
+            <div class="slide-chip">Ace’s Place</div>
+            <div class="slide-metric">
+              <span><strong>Learn</strong>light education</span>
+              <span><strong>Vibes</strong>kid-safe</span>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="carousel-dots">
+        <button class="dot active" data-index="0"></button>
+        <button class="dot" data-index="1"></button>
+        <button class="dot" data-index="2"></button>
+        <button class="dot" data-index="3"></button>
+        <button class="dot" data-index="4"></button>
+        <button class="dot" data-index="5"></button>
+      </div>
+    </div>
+  </section>
 
   <section class="section" id="products">
     <div class="section-header">
