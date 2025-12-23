@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>FrontRunner Signals | J Burr Enterprises</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Uses the SAME shared stylesheet as the rest of your site -->
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -29,60 +30,55 @@
   <section class="page-hero">
     <h1>FrontRunner Signals</h1>
     <p>
-      A premium TradingView script designed for traders who want
-      <strong>structure, zones, and repeatable decision-making</strong> —
-      not random alerts or hype.
+      A premium, invite-only TradingView script built for traders who want
+      <strong>structure, zones, and repeatable decision areas</strong> — not noisy alerts.
     </p>
     <div class="page-hero-meta">
-      Impulse · Balance · Impulse logic · Zone strength scoring · Retouch tracking
+      Impulse · Balance · Impulse (IBI) zones · Retouch tracking · Strength scoring
     </div>
   </section>
 
-  <!-- MAIN CONTENT -->
+  <!-- MAIN LAYOUT -->
   <section class="page-layout">
 
-    <!-- LEFT PANEL -->
+    <!-- LEFT PANEL: WHAT IT IS + HOW IT WORKS -->
     <div class="panel">
-      <h2>What FrontRunner Signals Does</h2>
+      <h2>What It Does</h2>
       <p>
-        FrontRunner Signals visualizes key price zones based on
-        <strong>Impulse–Balance–Impulse (IBI)</strong> behavior and
-        contextual candle structure.
+        FrontRunner Signals identifies key price zones derived from
+        <strong>Impulse–Balance–Impulse (IBI)</strong> behavior and related candle structure.
+        It helps you focus on the areas where decision-making matters most.
       </p>
 
       <ul>
-        <li>Automatically plots demand & supply zones</li>
-        <li>Tracks how many times price revisits each zone</li>
-        <li>Assigns a strength score that degrades with overuse</li>
-        <li>Supports higher-timeframe IBI confirmation</li>
-        <li>Highlights proximity conditions for planned execution</li>
+        <li>Automatically plots supply & demand zones</li>
+        <li>Tracks retouches (how many times price revisits a zone)</li>
+        <li>Assigns a strength score (0–100) and penalizes over-tested zones</li>
+        <li>Optional higher-timeframe IBI zones for added context</li>
       </ul>
 
       <p class="subtle">
-        This is a decision-support tool — not a signal spam engine.
+        FrontRunner Signals is a decision-support tool. It does not place trades or guarantee outcomes.
       </p>
 
       <hr style="margin:1.2rem 0; border-color: rgba(64,76,182,0.4);">
 
-      <h2>How Access Works</h2>
+      <h2>How It Works (IBI, Plain English)</h2>
       <p>
-        FrontRunner Signals is delivered as an
-        <strong>invite-only TradingView script</strong>.
+        The core idea is simple:
       </p>
       <ul>
-        <li>Subscribe using Stripe</li>
-        <li>Email your TradingView username to:</li>
-        <li><strong>access@jburrenterprises.com</strong></li>
-        <li>Access is granted manually within TradingView</li>
+        <li><strong>Impulse</strong> — price moves hard in one direction</li>
+        <li><strong>Balance</strong> — price compresses / pauses (small-body candles)</li>
+        <li><strong>Impulse Away</strong> — price leaves the balance area with conviction</li>
       </ul>
-
-      <p class="subtle">
-        Script access is tied to your TradingView account and can be revoked
-        if your subscription lapses.
+      <p>
+        That balance area becomes a <strong>zone</strong>. When price returns to that zone later,
+        it often becomes a key decision point (reaction, continuation, or failure).
       </p>
     </div>
 
-    <!-- RIGHT PANEL -->
+    <!-- RIGHT PANEL: PRICING -->
     <div class="panel">
       <h2>Pricing</h2>
 
@@ -91,11 +87,11 @@
         <div class="card-tag">Subscription</div>
         <h3>Monthly Access</h3>
         <p>
-          Full access to the FrontRunner Signals TradingView script.
+          Full invite-only access to FrontRunner Signals on TradingView.
         </p>
         <div class="card-footer">
-          <span>Billed monthly</span>
-          <a href="https://buy.stripe.com/test_00wcN51Goc2Z41L379dEs04" target="_blank">
+          <span><strong>$29.99</strong> / month</span>
+          <a href="https://buy.stripe.com/test_00wcN51Goc2Z41L379dEs04" target="_blank" rel="noopener">
             Subscribe →
           </a>
         </div>
@@ -106,39 +102,113 @@
         <div class="card-tag">Best Value</div>
         <h3>Annual Access</h3>
         <p>
-          Save with annual billing and uninterrupted access.
+          Lock in a full year of access and updates at the best price.
         </p>
         <div class="card-footer">
-          <span>Billed yearly</span>
-          <a href="https://buy.stripe.com/test_00waEXfxegjf41LazBdEs05" target="_blank">
+          <span><strong>$199.99</strong> / year</span>
+          <a href="https://buy.stripe.com/test_00waEXfxegjf41LazBdEs05" target="_blank" rel="noopener">
             Subscribe →
           </a>
         </div>
       </div>
 
       <p class="subtle" style="margin-top:0.8rem;">
-        All subscriptions renew automatically unless canceled.
+        Subscriptions renew automatically unless canceled. Access requires an active subscription.
       </p>
     </div>
 
   </section>
 
+  <!-- HOW TO USE -->
+  <section class="section">
+    <div class="panel">
+      <h2>How to Use FrontRunner Signals</h2>
+      <p>
+        FrontRunner Signals does not tell you what to buy or sell. It shows you where the
+        market is likely to make important decisions. Most traders use it like this:
+      </p>
+      <ul>
+        <li>Start with a higher timeframe (1H / 4H / 1D) to find context</li>
+        <li>Mark the strongest zones and wait for price to return</li>
+        <li>Drop to a lower timeframe to watch reaction and confirm your setup</li>
+        <li>Trade using your own rules (entries, stops, risk management)</li>
+      </ul>
+
+      <p class="subtle">
+        Best practice: treat zones as “areas of interest,” then wait for confirmation — not instant entries.
+      </p>
+    </div>
+  </section>
+
+  <!-- COLORS + LABELS -->
+  <section class="section">
+    <div class="panel">
+      <h2>Zone Colors & Labels (What You’re Seeing)</h2>
+
+      <p><strong>Zone colors</strong></p>
+      <ul>
+        <li><strong style="color:#7cf5ff;">Green</strong> — Bullish demand / support zone (IBI-style bullish structure)</li>
+        <li><strong style="color:#ff7a7a;">Red</strong> — Bearish supply / resistance zone (IBI-style bearish structure)</li>
+        <li><strong style="color:#9bb7ff;">Blue</strong> — Bullish neutral / inside-structure zone (context support)</li>
+        <li><strong style="color:#ffd36b;">Yellow</strong> — Bearish neutral / inside-structure zone (context resistance)</li>
+      </ul>
+
+      <p style="margin-top:0.8rem;"><strong>Retouch counter + strength score</strong></p>
+      <p>
+        Zones print a label that may look like:
+      </p>
+      <p style="margin-top:0.4rem; opacity:0.95;">
+        <code style="background: rgba(5,8,27,0.65); padding: 0.2rem 0.45rem; border-radius: 8px; border: 1px solid rgba(124,245,255,0.25);">
+          2 | 78
+        </code>
+      </p>
+      <ul style="margin-top:0.6rem;">
+        <li><strong>2</strong> = how many times price has retouched the zone</li>
+        <li><strong>78</strong> = strength score (0–100)</li>
+      </ul>
+
+      <p class="subtle">
+        As retouches increase, strength decreases. Fresh zones are often more meaningful than heavily tested zones.
+      </p>
+    </div>
+  </section>
+
+  <!-- ACCESS STEPS -->
+  <section class="section">
+    <div class="panel">
+      <h2>How You Get Access (Invite-Only)</h2>
+      <ol style="margin-left:1.1rem; margin-top:0.5rem;">
+        <li>Subscribe using Stripe (Monthly or Annual)</li>
+        <li>Reply with your <strong>TradingView username</strong></li>
+        <li>Access is granted to your TradingView account (invite-only)</li>
+      </ol>
+
+      <p style="margin-top:0.75rem;">
+        Send your TradingView username to:
+        <strong>access@jburrenterprises.com</strong>
+      </p>
+
+      <p class="subtle">
+        Access is tied to your TradingView account and can be revoked if your subscription lapses or is canceled.
+      </p>
+    </div>
+  </section>
+
   <!-- DISCLAIMER -->
   <section class="section">
     <div class="panel">
-      <h2>Important Disclaimer</h2>
+      <h2>Disclaimer</h2>
       <p>
-        FrontRunner Signals is a charting and decision-support tool only.
-        It does <strong>not</strong> provide financial advice, trade recommendations,
-        or guarantees of performance.
+        FrontRunner Signals provides algorithmic indicators for educational purposes only. Signals are not financial advice,
+        trade recommendations, or guarantees of performance. Past results do not predict future outcomes.
       </p>
-      <p>
-        Trading stocks, options, and other financial instruments involves
-        substantial risk and may result in partial or total loss of capital.
+      <p style="margin-top:0.6rem;">
+        Trading stocks, options, futures, and cryptocurrencies involves significant risk and may result in partial or total
+        loss of capital. You assume full responsibility for any decisions and trades you make.
       </p>
-      <p>
-        All trades are executed at the user’s own discretion and risk.
-        Past performance is not indicative of future results.
+      <p style="margin-top:0.6rem;">
+        By subscribing, you agree you will not copy, resell, distribute, or reverse-engineer the indicator code or outputs.
+        Subscriptions auto-renew unless canceled. Refunds are not issued once access is granted.
       </p>
     </div>
   </section>
