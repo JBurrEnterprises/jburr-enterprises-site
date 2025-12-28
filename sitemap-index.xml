@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://jburrenterprises.github.io/jburr-enterprises-site/</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://jburrenterprises.github.io/jburr-enterprises-site/stratify/</loc>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://jburrenterprises.github.io/jburr-enterprises-site/frontrunner/</loc>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://jburrenterprises.github.io/jburr-enterprises-site/counselix/</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://jburrenterprises.github.io/jburr-enterprises-site/lifenex/</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://jburrenterprises.github.io/jburr-enterprises-site/postpilot/</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://jburrenterprises.github.io/jburr-enterprises-site/acesplace/</loc>
+    <priority>0.70</priority>
+  </url>
+
+</urlset>
