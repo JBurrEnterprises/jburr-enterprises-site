@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jburrenterprises.github.io/jburr-enterprises-site/sitemap.xml
